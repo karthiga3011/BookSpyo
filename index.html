@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        BookSpyo
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <body>
+        <div class="navigator">
+            <h1>BookSpyo</h1>
+        </div>
+        <div class="container">
+            <div class="book-container">
+                <h2>Rich Guy Poor Guy</h2>
+                <h1>Berlin</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id ab, sequi aut nihil harum rerum impedit nam tenetur, assumenda ipsam voluptas ad corporis fuga perferendis distinctio odit facere. Vel, magnam.</p>
+                <button onclick="deletebook(event)">Delete</button>
+            </div>
+            
 
+        </div>
+        <div class="popup-overlay"></div>
+        <div class="popup-box">
+            <h2>Add Book</h2>
+            <form>
+                <input type="text" placeholder="Book Title" id="book-title-input"><br>
+                <input type="text" placeholder="Book Author" id="book-author-input"><br>
+                <textarea placeholder="Short Description" id="book-description-input"></textarea><br>
+                <button id="addbook">Add</button><br>
+                <button id="cancelpopup">Cancel</button><br>
+            </form>
+
+        </div>
+        <button class="add-button" id="add-popup-button">+</button>
+        <script src="script.js"></script>
+    </body>
+</html>
